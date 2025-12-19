@@ -21,11 +21,11 @@ Unlike "Digital Attacks" (which manipulate pixels imperceptibly), these scripts 
 
 | Baseline | Digital Attack | Physical Attack |
 | :---: | :---: | :---: |
-| ![Baseline](attack_results/1_baseline.png) | ![Digital Attack](attack_results/2_digital_attack.png) | ![Physical Attack](attack_results/3_physical_attack.png) |
+| ![Baseline](advanced_results/1_baseline.png) | ![Digital Attack](advanced_results/2_digital_attack.png) | ![Physical Attack](advanced_results/3_physical_attack.png) |
 
 | Digital Noise Pattern | Generated Patch |
 | :---: | :---: |
-| ![Digital Noise](attack_results/2b_digital_noise_pattern.png) | ![Generated Patch](attack_results/3b_generated_patch.png) |
+| ![Digital Noise](advanced_results/2b_digital_noise_pattern.png) | ![Generated Patch](advanced_results/3b_generated_patch.png) |
 
 #### 2. `physical_attack_simulation.py/physical_attack_simulation.ipynb` (Advanced Research Lab)
 **Goal:** A modular simulation of the three specific threat vectors defined in physical adversarial literature (Eykholt et al., Wei et al.).
@@ -40,11 +40,11 @@ Unlike "Digital Attacks" (which manipulate pixels imperceptibly), these scripts 
 
 | Baseline | Vanishing Attack |
 | :---: | :---: |
-| ![Baseline](advanced_results/0_baseline.png) | ![Vanishing Attack](advanced_results/1_vanishing_attack.png) |
+| ![Baseline](attack_results/0_baseline.png) | ![Vanishing Attack](attack_results/1_vanishing_attack.png) |
 
 | Miscategorization Attack | Fabrication Attack |
 | :---: | :---: |
-| ![Miscategorization Attack](advanced_results/2_miscategorization_attack.png) | ![Fabrication Attack](advanced_results/3_fabrication_attack.png) |
+| ![Miscategorization Attack](attack_results/2_miscategorization_attack.png) | ![Fabrication Attack](attack_results/3_fabrication_attack.png) |
 
 ### 🧠 Methodology: Expectation Over Transformation (EOT)
 Both scripts utilize EOT to ensure the generated attacks are physically realizable. A static patch optimized for a single digital image often fails in the real world due to viewing angle changes.
