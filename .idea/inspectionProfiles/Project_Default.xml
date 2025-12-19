@@ -1,0 +1,33 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="147" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="torchgeo" />
+          <option value="pytorch-lightning" />
+          <option value="rasterio" />
+          <option value="matplotlib" />
+          <option value="spectral" />
+          <option value="geopandas" />
+          <option value="folium" />
+          <option value="neonutilities" />
+          <option value="pandas" />
+          <option value="requests" />
+          <option value="shapely" />
+          <option value="gdal" />
+          <option value="scikit-image" />
+          <option value="seaborn" />
+          <option value="vit-pytorch" />
+          <option value="torch" />
+          <option value="torchvision" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
