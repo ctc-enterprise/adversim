@@ -17,6 +17,16 @@ Unlike "Digital Attacks" (which manipulate pixels imperceptibly), these scripts 
 
 **Output:** Generates side-by-side comparisons of baseline detections, digital noise attacks, and physical patch attacks.
 
+**Results:**
+
+| Baseline | Digital Attack | Physical Attack |
+| :---: | :---: | :---: |
+| ![Baseline](attack_results/1_baseline.png) | ![Digital Attack](attack_results/2_digital_attack.png) | ![Physical Attack](attack_results/3_physical_attack.png) |
+
+| Digital Noise Pattern | Generated Patch |
+| :---: | :---: |
+| ![Digital Noise](attack_results/2b_digital_noise_pattern.png) | ![Generated Patch](attack_results/3b_generated_patch.png) |
+
 #### 2. `physical_attack_simulation.py/physical_attack_simulation.ipynb` (Advanced Research Lab)
 **Goal:** A modular simulation of the three specific threat vectors defined in physical adversarial literature (Eykholt et al., Wei et al.).
 
@@ -25,6 +35,16 @@ Unlike "Digital Attacks" (which manipulate pixels imperceptibly), these scripts 
 *   **Feature 3: Object Fabrication (Hallucination):** Optimizes a patch to appear as a valid object (e.g., a "Toaster") even when placed in an empty background region.
 
 **Architecture:** Supports switching between backbones (e.g., ResNet50 vs. MobileNetV3) to test transferability and model size effects.
+
+**Results:**
+
+| Baseline | Vanishing Attack |
+| :---: | :---: |
+| ![Baseline](advanced_results/0_baseline.png) | ![Vanishing Attack](advanced_results/1_vanishing_attack.png) |
+
+| Miscategorization Attack | Fabrication Attack |
+| :---: | :---: |
+| ![Miscategorization Attack](advanced_results/2_miscategorization_attack.png) | ![Fabrication Attack](advanced_results/3_fabrication_attack.png) |
 
 ### 🧠 Methodology: Expectation Over Transformation (EOT)
 Both scripts utilize EOT to ensure the generated attacks are physically realizable. A static patch optimized for a single digital image often fails in the real world due to viewing angle changes.
@@ -49,14 +69,14 @@ pip install torch torchvision numpy pillow requests matplotlib opencv-python tqd
 **Run the Basic Comparison:**
 
 ```bash
-python adversarial_detection_demo.py
+python adversarial_attack_simulation.py
 ```
 **Output:** Check `attack_results/` for comparative images.
 
 **Run the Advanced Threat Simulation:**
 
 ```bash
-python advanced_physical_simulation.py
+python physical_attack_simulation.py
 ```
 **Output:** Check `advanced_results/` for specific attack vector visualizations (Vanishing, Miscategorization, Fabrication).
 
